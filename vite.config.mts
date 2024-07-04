@@ -10,8 +10,9 @@ import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
+const base = process.env.NODE_ENV === 'production' ? '/LUPIN-CV/' : '/'
 export default defineConfig({
-  base: 'LUPIN-CV',
+  base: base,
   plugins: [
     VueRouter(),
     Vue({
