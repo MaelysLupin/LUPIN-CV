@@ -9,17 +9,13 @@ declare module 'vue' {
   export interface GlobalComponents {
     ChangeLg: typeof import('./src/components/ChangeLg.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     MenuNav: typeof import('./src/components/MenuNav.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SideBar: typeof import('./src/components/SideBar.vue')['default']
-    Tabfour: typeof import('./src/components/Tabfour.vue')['default']
     TabFour: typeof import('./src/components/TabFour.vue')['default']
     TabOne: typeof import('./src/components/TabOne.vue')['default']
     TabThree: typeof import('./src/components/TabThree.vue')['default']
     TabTwo: typeof import('./src/components/TabTwo.vue')['default']
-    Toggle: typeof import('./src/components/Toggle.vue')['default']
   }
 }

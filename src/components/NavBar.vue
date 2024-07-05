@@ -10,5 +10,5 @@
 </template>
 
 <script setup lang="ts">
-import ChangeLg from "./ChangeLg"
+import ChangeLg from "./ChangeLg.vue"
 </script>
