@@ -19,22 +19,27 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { defineAsyncComponent } from 'vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const tab = ref('tabOne')
 
 const items = [
-  { key: 'tabOne', label: t('tabOne') },
-  { key: 'tabTwo', label: t('tabTwo') },
-  { key: 'tabThree', label: t('tabThree') },
-  { key: 'tabFour', label: t('tabFour') },
+  { key: 'tabOne', labelKey: 'tabOne' },
+  { key: 'tabTwo', labelKey: 'tabTwo' },
+  { key: 'tabThree', labelKey: 'tabThree' },
+  { key: 'tabFour', labelKey: 'tabFour' },
 ]
 
-const localizedItems = ref(items)
+const localizedItems = computed(() =>
+  items.map(item => ({
+    key: item.key,
+    label: t(item.labelKey)
+  }))
+)
 
 const TabOne = defineAsyncComponent(() => import('./TabOne.vue'))
 const TabTwo = defineAsyncComponent(() => import('./TabTwo.vue'))

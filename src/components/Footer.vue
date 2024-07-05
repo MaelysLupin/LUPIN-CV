@@ -14,10 +14,10 @@
       </v-snackbar>
     </div>
 
-    <div class="pt-0">
+    <!-- <div class="pt-0">
       Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut
       risus eget metus luctus accumsan id ultrices nunc.
-    </div>
+    </div> -->
 
     <v-divider></v-divider>
 

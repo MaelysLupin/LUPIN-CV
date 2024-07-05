@@ -4,6 +4,7 @@ import Vue from "@vitejs/plugin-vue";
 import Vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 import ViteFonts from "unplugin-fonts/vite";
 import VueRouter from "unplugin-vue-router/vite";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 // Utilities
 import { defineConfig } from "vite";
@@ -17,6 +18,14 @@ export default defineConfig({
     VueRouter(),
     Vue({
       template: { transformAssetUrls },
+    }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: "locales", // Dossier contenant vos fichiers JSON de localisation
+          dest: "", // Destination dans le dossier dist
+        },
+      ],
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
     Vuetify({
