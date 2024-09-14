@@ -7,5 +7,8 @@
     "tabFour": "Langues",
     "textProfil" : "Diplomée en septembre 2024 de l'ENIB, je suis à la recherche de mon premier emploi en développement, avec l'envie de contribuer à des projets intéressants et de continuer à développer mes compétences.",
     "age": "24 ans",
-    "diplome": "Diplômée de l'Ecole Nationale d'Ingenieurs de Brest en 2024"
+    "diplome": "Diplômée de l'Ecole Nationale d'Ingenieurs de Brest en 2024",
+    "LV1": "Français",
+    "LV2": "Anglais",
+    "LV3": "Espagnol"
 }

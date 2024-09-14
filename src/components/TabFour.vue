@@ -1,12 +1,12 @@
 <template>
     <div class="Box-langues">
-        <v-list-item class="contact-title">Français</v-list-item>
+        <v-list-item class="contact-title">{{ $t('LV1') }}</v-list-item>
         <v-progress-linear v-model="francais" color="success" height="25"></v-progress-linear>
         <br>
-        <v-list-item class="contact-title">Anglais</v-list-item>
+        <v-list-item class="contact-title">{{ $t('LV2') }}</v-list-item>
         <v-progress-linear v-model="anglais" color="blue-grey" height="25"></v-progress-linear>
         <br>
-        <v-list-item class="contact-title">Espagnol</v-list-item>
+        <v-list-item class="contact-title">{{ $t('LV3') }}</v-list-item>
         <v-progress-linear v-model="espagnol" color="teal" height="25"></v-progress-linear>
         <br>
     </div>

@@ -7,5 +7,8 @@
     "tabFour": "Languages",
     "textProfil": "Graduating in September 2024 from ENIB, I'm looking for my first job in development, with the desire to contribute to interesting projects and continue to develop my skills.",
     "age" : "24 years old",
-    "diplome": "Graduated from the Ecole Nationale d'Ingenieurs de Brest in 2024"
+    "diplome": "Graduated from the Ecole Nationale d'Ingenieurs de Brest in 2024",
+    "LV1": "French",
+    "LV2": "English",
+    "LV3": "Spanish"
 }
