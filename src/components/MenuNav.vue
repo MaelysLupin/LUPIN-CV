@@ -1,12 +1,14 @@
 <template>
-  <v-card color="basil">
-    <v-tabs v-model="tab" bg-color="transparent" color="basil" grow>
-      <v-tab v-for="item in localizedItems" :key="item.key" :value="item.key">
-        <span :class="{ 'text-no-select': tab !== item.key }">{{ item.label }}</span>
-      </v-tab>
-    </v-tabs>
+  <v-card class="card-container" color="basil">
+    <div class="tabs-container">
+      <v-tabs v-model="tab" bg-color="transparent" color="basil" grow>
+        <v-tab v-for="item in localizedItems" :key="item.key" :value="item.key">
+          <span :class="{ 'text-no-select': tab !== item.key }">{{ item.label }}</span>
+        </v-tab>
+      </v-tabs>
+    </div>
 
-    <v-tabs-window v-model="tab">
+    <v-tabs-window v-model="tab" class="scrollable-content">
       <v-tabs-window-item v-for="item in localizedItems" :key="item.key" :value="item.key">
         <v-card color="basil" flat>
           <v-card-text class="text-basil">
@@ -53,3 +55,30 @@ const components = {
   'tabFour': TabFour,
 }
 </script>
+
+<style>
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* Ajuste la hauteur totale à la hauteur de la fenêtre */
+}
+
+.tabs-container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* Assure que les onglets sont au-dessus du contenu défilant */
+  background-color: inherit;
+  /* Garde le fond transparent ou défini une couleur si nécessaire */
+}
+
+.scrollable-content {
+  flex: 1;
+  /* Permet au contenu de prendre l'espace restant */
+  overflow-y: auto;
+  /* Ajoute un défilement vertical si nécessaire */
+  padding: 1rem;
+  /* Ajoute un peu de padding pour l'espacement interne */
+}
+</style>

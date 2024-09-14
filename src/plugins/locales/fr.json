@@ -1,9 +1,11 @@
 {
     "nom": "NOM",
     "titre": "Titre",
-    "tabOne": "Tab un",
-    "tabTwo": "Tab deux",
-    "tabThree": "Tab trois",
-    "tabFour": "Tab quatre"
+    "tabOne": "Profil",
+    "tabTwo": "Formation et expériences",
+    "tabThree": "Compétences et projets",
+    "tabFour": "Langues",
+    "textProfil" : "Diplomée en septembre 2024 de l'ENIB, je suis à la recherche de mon premier emploi en développement, avec l'envie de contribuer à des projets intéressants et de continuer à développer mes compétences.",
+    "age": "24 ans",
+    "diplome": "Diplômée de l'Ecole Nationale d'Ingenieurs de Brest en 2024"
 }
-  

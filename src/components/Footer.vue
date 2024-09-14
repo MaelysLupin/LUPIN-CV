@@ -13,17 +13,7 @@
         </template>
       </v-snackbar>
     </div>
-
-    <!-- <div class="pt-0">
-      Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut
-      risus eget metus luctus accumsan id ultrices nunc.
-    </div> -->
-
     <v-divider></v-divider>
-
-    <!-- <div>
-      {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-    </div> -->
   </v-footer>
 </template>
 
@@ -37,16 +27,16 @@ const icons = [
 ]
 
 const links = {
-  'mdi-linkedin': 'https://vuetifyjs.com/',
+  'mdi-linkedin': 'https://www.linkedin.com/in/maelys-lupin',
 }
 
 const snackbar = ref(false)
 const currentText = ref('')
 
 const texts = {
-  'mdi-phone': 'This is the phone text',
-  'mdi-gmail': 'This is the Gmail text',
-  'mdi-linkedin': 'https://vuetifyjs.com/'
+  'mdi-phone': '07.60.08.56.76',
+  'mdi-gmail': 'maelyslupin6@gmail.com',
+  'mdi-linkedin': 'https://www.linkedin.com/in/maelys-lupin'
 }
 
 const showSnackbar = (icon) => {
